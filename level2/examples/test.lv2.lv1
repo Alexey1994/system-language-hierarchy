@@ -1,0 +1,69 @@
+push 0
+push 0
+push 0
+push 0
+push 0
+push 1
+push 0 local_to_global
+store
+push 2
+push 4 local_to_global
+store
+push 3
+push 8 local_to_global
+store
+push 0 local_to_global
+push 4 local_to_global
+push 16 local_to_global
+store
+push 12 local_to_global
+store
+push 32
+push 0 system_call
+begin_call
+push 12 local_to_global load
+push print_number call
+push 32
+push 0 system_call
+begin_call
+push 12 local_to_global load
+load
+push print_number call
+push 32
+push 0 system_call
+begin_call
+push 16 local_to_global load
+push print_number call
+push 32
+push 0 system_call
+begin_call
+push 16 local_to_global load
+load
+push print_number call
+_2:
+push 1
+push _3 jump_if_zero
+push _2 jump
+_3:
+return
+print_number:
+push 0
+push 0
+push 0 local_to_global load
+push 10
+divide
+push 8 local_to_global
+store
+push 4 local_to_global
+store
+push 4 local_to_global load
+push _1 jump_if_zero
+begin_call
+push 4 local_to_global load
+push print_number call
+_1:
+push 8 local_to_global load
+push 48
+add
+push 0 system_call
+return

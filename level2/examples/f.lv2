@@ -1,0 +1,6 @@
+#`push 17`
+res
+
+x y
+
+res = x + y

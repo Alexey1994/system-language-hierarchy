@@ -1,0 +1,26 @@
+#`push 0`
+#`push 0`
+#`push 0`
+
+a = 1
+b = 2
+c = 3
+
+#a, b = b, a
+#a, b = 16 / 3
+#a, b, c = c, b, a
+
+#0(a + '0')
+#0(b + '0')
+#0(c + '0')
+
+d, e = &a, &b
+
+0(' ') print_number(d)
+0(' ') print_number([d])
+0(' ') print_number(e)
+0(' ') print_number([e])
+
+while 1 {
+	
+}

@@ -1,0 +1,13 @@
+push 2
+push 0
+system_call
+
+push 56
+push 0
+system_call
+
+push 1
+push 2
+add
+push 0
+system_call
